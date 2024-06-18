@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <select name="places" id="place" onchange="searchWeather()">
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="kolkata">Kolkata</option>
+            <option value="aurangabad">Aurangabad</option>
+            <option value="chennai">Chennai</option>
+        </select>
+        <h1 id="placeof">Today's Weather</h1>
+        <div class="flex-container">
+            <img id="weather-icon" src="" alt="Weather Icon" style="display: none;">
+            <div class="text-content">
+                <h1 id="temp">24°C</h1>
+            </div>
+        </div>
+        <p id="error-message" style="color: red;"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
